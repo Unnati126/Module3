@@ -40,6 +40,6 @@ function daysInBetween(date1, date2) {   //function to calculate the number of d
     return Math.floor(timeDiff / (1000 * 60 * 60 * 24)); 
 }
 
-const startDate = new Date(2022, 0, 1); 
+const startDate = new Date(2023, 0, 1); 
 const endDate = today; 
 console.log(`Days between: ${daysInBetween(startDate, endDate)}`);
