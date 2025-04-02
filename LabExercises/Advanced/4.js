@@ -24,6 +24,6 @@ function printFibonacciTimeouts(limit, a = 0, b = 1, count = 0) {
     }
 console.log(b);
 
-setTimeout(() => printFibonacciTimeouts(limit, b, a+b, count + 1), 1000);
+setTimeout(() => printFibonacciTimeouts(limit, b, a + b, count + 1), 1000);
 }
 printFibonacciTimeouts(10);
