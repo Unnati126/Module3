@@ -4,7 +4,7 @@ function printFibonacci(limit) {
   
     const interval = setInterval(() => {
     console.log(b);
-    [a, b] = [b, a+b];  //calculate next number
+    [a, b] = [b, a + b];  //calculate next number
     count++;
 
     if (count >= limit) {
