@@ -1,11 +1,14 @@
 // Basic camelCase function using split() and map())
 function camelCase(cssProp) {
-    return cssProp
+  let [first, ...rest] = cssProp.split('-'); // Extract the first word separately
+  return first + rest.map(word => word.charAt(0).toUpperCase() + word.slice(1)).join('');
+
+    /* return cssProp
       .split('-') 
       .map((word, index) =>
-        index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
+      index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
       ) 
-      .join(''); 
+      .join(''); */
   }
   
   console.log(camelCase('margin-left')); // marginLeft

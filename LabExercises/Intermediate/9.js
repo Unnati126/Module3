@@ -18,7 +18,12 @@ console.log("Total Salaries: $" + sumSalaries(salaries));
 
 
 function topEarner(salaries) {    //function to find the top earner in the object
-    let maxSaalary = 0;
+        return Object.entries(salaries)
+            .sort((a, b) => b[1] - a[1])
+            [0][0];
+}
+  
+    /* let maxSaalary = 0;
     let topEarner = "";
 
     for (let [name, salary] of Object.entries(salaries)) {
@@ -27,6 +32,6 @@ function topEarner(salaries) {    //function to find the top earner in the objec
             topEarner = name;
         }
     }
-    return topEarner;
-}
+    return topEarner; */
+
 console.log("Top Earner: " + topEarner(salaries));
